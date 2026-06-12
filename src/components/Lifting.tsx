@@ -23,7 +23,7 @@ export default function Lifting() {
     <div id="lifting" className="mt-16 scroll-mt-24">
       <Reveal>
         <p className="font-mono text-xs tracking-[0.3em] text-accent">{lifting.heading.toUpperCase()}</p>
-        <h3 className="mt-2 font-display text-2xl font-bold">…and the kind set in the gym</h3>
+        <h3 className="mt-2 font-display text-2xl font-bold">Personal records of a different kind</h3>
         <p className="mt-4 max-w-3xl leading-relaxed text-muted">{lifting.intro}</p>
       </Reveal>
 

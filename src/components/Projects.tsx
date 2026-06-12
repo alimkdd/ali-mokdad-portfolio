@@ -44,14 +44,14 @@ export default function Projects() {
   return (
     <section id="projects" className="scroll-mt-24 py-20">
       <Reveal>
-        <SectionHeading set="04" title="PRs — Personal Records" />
+        <SectionHeading set="04" title="Personal Projects" />
         <p className="-mt-6 mb-10 max-w-2xl text-sm text-muted">
-          A PR is a personal record — and mine come in two flavors: the systems I&apos;m proudest of shipping (all open
-          on{" "}
+          Production-grade side projects born from problems I met building real payment systems — retries, fees,
+          scheduling, compliance. All open source on{" "}
           <a href={site.github} target="_blank" rel="noopener noreferrer" className="text-accent-bright hover:underline">
             GitHub
           </a>
-          ), and the kilograms I put on a barbell.
+          , all built the way I&apos;d ship them to production.
         </p>
       </Reveal>
 

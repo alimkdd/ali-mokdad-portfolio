@@ -7,12 +7,13 @@ import useActiveSection from "./useActiveSection";
 const BAR = 20; // empty barbell, kg
 const PLATE_STEPS = 12;
 
-const SECTION_IDS = ["about", "skills", "experience", "projects", "education", "contact"];
+const SECTION_IDS = ["about", "skills", "experience", "projects", "lifting", "education", "contact"];
 const SECTION_LABELS: Record<string, string> = {
   about: "ABOUT",
   skills: "SKILLS",
   experience: "EXPERIENCE",
-  projects: "LIFTINGS",
+  projects: "PROJECTS",
+  lifting: "LIFTINGS",
   education: "EDUCATION",
   contact: "FINAL SET",
 };
