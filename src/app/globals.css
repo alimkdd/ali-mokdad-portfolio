@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+}
+
+@theme {
+  --color-bg: #0a0a0a;
+  --color-surface: #131313;
+  --color-raised: #1a1a1a;
+  --color-edge: #262626;
+  --color-ink: #ededed;
+  --color-muted: #9b9b9b;
+  --color-faint: #8a8a8a;
+  --color-accent: #dc2626;
+  --color-accent-bright: #ef4444;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* keyboard-only "skip to content" link; parked off-screen until focused */
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 1rem;
+  z-index: 100;
+  border-radius: 0.25rem;
+  background-color: var(--color-accent);
+  padding: 0.5rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: #ffffff;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+@page {
+  margin: 14mm 12mm;
+}
+
+@media print {
+  html,
+  body {
+    background: #ffffff !important;
+  }
+  .skip-link {
+    display: none;
+  }
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+
+/* subtle red radial glow used behind the hero */
+.hero-glow {
+  background:
+    radial-gradient(ellipse 60% 50% at 70% 20%, rgba(220, 38, 38, 0.12), transparent 70%),
+    radial-gradient(ellipse 50% 40% at 20% 80%, rgba(220, 38, 38, 0.05), transparent 70%);
+}
+
+/* faint grid texture for the page background */
+.grid-texture {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
