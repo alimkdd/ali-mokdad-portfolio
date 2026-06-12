@@ -30,6 +30,16 @@
   border-radius: 2px;
 }
 
+/* hide the horizontal scrollbar on carousel tracks */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 /* keyboard-only "skip to content" link; parked off-screen until focused */
 .skip-link {
   position: fixed;

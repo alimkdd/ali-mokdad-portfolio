@@ -1,6 +1,7 @@
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 import Lifting from "./Lifting";
+import Carousel from "./Carousel";
 import { projects, site } from "@/data/content";
 
 function Terminal({ cmd, lines }: { cmd: string; lines: string[] }) {
@@ -93,9 +94,11 @@ export default function Projects() {
         </Reveal>
       )}
 
-      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {rest.map((project, i) => (
-          <Reveal key={project.name} delay={(i % 3) * 0.06}>
+      <Carousel
+        ariaLabel="Personal projects"
+        gridClassName="sm:grid-cols-2 lg:grid-cols-3"
+        items={rest.map((project, i) => (
+          <Reveal key={project.name} delay={(i % 3) * 0.06} className="w-full">
             <article className="flex h-full flex-col rounded-lg border border-edge bg-surface p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent/50">
               <div className="mb-4">
                 <Terminal cmd={project.terminal.cmd} lines={project.terminal.lines} />
@@ -123,7 +126,7 @@ export default function Projects() {
             </article>
           </Reveal>
         ))}
-      </div>
+      />
 
       <Lifting />
     </section>
