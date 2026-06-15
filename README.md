@@ -16,14 +16,16 @@ npm run build   # production build
 
 All copy and data live in one file: `src/data/content.ts` — contact links, skills, experience bullets, project cards, lift PRs, education. Edit it and the whole site updates.
 
-Assets in `public/`: `profile.jpg` (headshot) and `Ali-Mokdad-CV.pdf` (the CV download).
+Assets in `public/`: `profile.jpg` (headshot) and `AliMokdad-SoftwareEngineer_Resume.pdf` (the CV download).
 
 ## CV
 
-The CV is a page on the site itself: `/cv` — white, print-optimized, and built from the same `src/data/content.ts` data as the rest of the site. After editing content, regenerate the downloadable PDF with the dev server running:
+The **Download CV** button serves the standalone résumé PDF at `public/AliMokdad-SoftwareEngineer_Resume.pdf` (path set via `site.cv` in `src/data/content.ts`). To update it, replace that file with a new export.
+
+There is also an on-site print view at `/cv` — white, print-optimized, and built from the same `src/data/content.ts` data as the rest of the site. To regenerate a PDF from that page instead, run with the dev server running:
 
 ```powershell
-& "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --headless --no-pdf-header-footer --print-to-pdf="public\Ali-Mokdad-CV.pdf" http://localhost:3000/cv
+& "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --headless --no-pdf-header-footer --print-to-pdf="public\AliMokdad-SoftwareEngineer_Resume.pdf" http://localhost:3000/cv
 ```
 
 ## Contact form

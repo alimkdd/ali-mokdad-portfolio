@@ -10,7 +10,7 @@ export const site = {
   phoneHref: "+96178964421",
   linkedin: "https://www.linkedin.com/in/ali-mokdad-5511a5168",
   github: "https://github.com/alimkdd",
-  cv: "/Ali-Mokdad-CV.pdf",
+  cv: "/AliMokdad-SoftwareEngineer_Resume.pdf",
   url: "https://alimokdadportfolio.vercel.app",
 };
 
