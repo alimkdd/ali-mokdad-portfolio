@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Ali Mokdad — Software Engineer";
+export const alt = "Ali Mokdad — Senior Software Engineer";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -22,7 +22,7 @@ export default function OgImage() {
         }}
       >
         <div style={{ display: "flex", fontSize: 26, color: "#dc2626", letterSpacing: 10, fontWeight: 600 }}>
-          SOFTWARE ENGINEER
+          SENIOR SOFTWARE ENGINEER
         </div>
         <div style={{ display: "flex", fontSize: 104, fontWeight: 700, marginTop: 12, letterSpacing: -3 }}>
           Ali Mokdad<span style={{ color: "#dc2626" }}>.</span>

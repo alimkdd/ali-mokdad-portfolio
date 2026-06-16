@@ -10,13 +10,13 @@ const jetbrains = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrai
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://alimokdadportfolio.vercel.app"),
-  title: "Ali Mokdad — Software Engineer",
+  title: "Ali Mokdad — Senior Software Engineer",
   description:
-    "Software engineer in Beirut building digital wallets, payment systems, and high-traffic platforms on .NET. Transactions, queues, and integrations that can't afford to fail.",
+    "Senior software engineer in Beirut building digital wallets, payment systems, and high-traffic platforms on .NET. Transactions, queues, and integrations that can't afford to fail.",
   openGraph: {
-    title: "Ali Mokdad — Software Engineer",
+    title: "Ali Mokdad — Senior Software Engineer",
     description:
-      "Software engineer building digital wallets and payment systems on .NET — transactions, queues, and integrations that can't afford to fail.",
+      "Senior software engineer building digital wallets and payment systems on .NET — transactions, queues, and integrations that can't afford to fail.",
     url: "https://alimokdadportfolio.vercel.app",
     siteName: "Ali Mokdad",
     type: "website",

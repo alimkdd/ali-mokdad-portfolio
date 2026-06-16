@@ -44,7 +44,7 @@ export default function Home() {
       </main>
       <footer className="border-t border-edge py-8">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-2 px-5 font-mono text-xs text-faint sm:flex-row sm:justify-between sm:px-8">
-          <p>© Ali Mokdad · Software Engineer</p>
+          <p>© Ali Mokdad · Senior Software Engineer</p>
           <p>Built with Next.js & Tailwind · Beirut, Lebanon</p>
         </div>
       </footer>
