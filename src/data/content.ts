@@ -1,7 +1,7 @@
 export const site = {
   name: "Ali Mokdad",
   initials: "AM",
-  role: "Senior Software Engineer",
+  role: "Software Engineer",
   location: "Beirut, Lebanon",
   tagline:
     "I build the systems behind digital wallets — transactions, queues, and integrations that can't afford to fail.",
@@ -69,7 +69,7 @@ export const skillGroups = [
 ];
 
 export const summary =
-  "Senior software engineer with 5+ years building financial and high-traffic systems on .NET — digital wallets, multi-tenant platforms, and banking products. Specialized in real-time transaction processing, messaging architectures, and Clean Architecture codebases that stay testable as they grow.";
+  "Software engineer with 5+ years building financial and high-traffic systems on .NET — digital wallets, multi-tenant platforms, and banking products. Specialized in real-time transaction processing, messaging architectures, and Clean Architecture codebases that stay testable as they grow.";
 
 export type Job = {
   company: string;
